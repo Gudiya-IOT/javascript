@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            color: red;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>this is my heading tag</h1>
+    <button>click</button>
+
+    <script>
+
+        //  Print methods 3 types:-
+
+        // console.log("hello java script")
+        // alert("hyy i am java script")
+        // document.write("java script")
+
+
+        //             //Variables:-
+
+        // a=[]
+        //  console.log(typeof a)
+        // console.log(a)
+
+        // b="neha"
+        // console.log(typeof b)
+        // console.log(b)
+
+        // c=10
+        // console.log(typeof c)
+        // console.log(c)
+        //     ////////////////////////////////////////////
+
+
+        //            //3 keywords to define variables(;) in js:-
+
+        // var a=10;
+        // var a=40;               //re-declared
+        // a=50;            //re-assigned or re-initialised   // ; if u wish
+        // console.log(a)
+
+        // let b=20;
+        // b=60          //re-assigned value
+        // console.log(b)
+
+        // const c=30;           //Nothing
+        // console.log(c)
+        //     ///////////////////////////////////////////////////////////
+
+
+        //               // global and local variables/scope
+
+        // {
+        //     var a = 10;              //global scope 
+        // }
+        // console.log(a)
+        
+        // {
+        //     let b = 20;                 //local scope
+        //     console.log(b)
+        // }
+        
+        // {
+        //     const c = 30;               //local scope
+        //     console.log(c)
+        // }
+            
+
+        // // var i = 10;                               //global scope
+        // // for (var i = 0; i < 5; i++) {
+        // //     console.log(i) 
+        // // }
+        // // console.log(i) 
+
+        //     var i = 10;                               //correction
+        //    for (var k = 0; k < 5; k++) {
+        //        console.log(i) 
+        //         }
+        //        console.log(i)
+
+        // let j = 10;                                   //local scope
+        // for (let j = 0; j < 5; j++) {
+        //     console.log(j)
+        // }
+        // console.log(j)
+        // //      //////////////////////////////////////////////////////////
+
+
+        //                     // VARIABLE HOSTING in js
+
+        // output()                           //function call (before)
+        // function output(){                  //function declare or define
+        //  console.log("hello java script")
+        //                  }
+        //            /////////////////////////////////////////////////
+
+
+            //                     //HOSTING VARIABLE=through var create
+
+            // console.log(a=100)                       // access a before initialisation  //can re-assingn value
+            // var a;                                    //hosting variable
+
+            // let b;                                   //not
+            // console.log(b=200)                        //can re-assingn value
+
+            // const c = 300;                           //not
+            // console.log(c)                            //can't re-assingn value
+            //          /////////////////////////////////////////////////////////////////////////////
+
+
+                                  //OPERATORS
+
+            // console.log(10<5)
+            // console.log(5<=5)
+            // console.log('A'>'B')
+            // console.log('a'<'b')
+            // console.log('5'==5)
+            // console.log('5'===5)
+            // console.log('7'!=7)
+            // console.log('7'!==7)
+            // console.log(2**5)
+            
+
+
+
+
+        //     let age=18;
+        //      age=10;
+        //      age=5
+        //     if(age>=18){
+        //         console.log("aap vote de sakte h")
+        //     }
+        //     else if(age>=10 && age<18){
+        //         console.log("aapka half vote lagega")
+        //     }
+        //     else{
+        //         console.log("aap vote nhi de sakte")
+        //     }
+
+
+
+        //         let a=5;
+        // let b=6;
+        // let c=2;
+        // let d=9;
+        // if(a>b){
+        //     if(a>c){
+        //         if(a>d){
+        //             console.log("a is greatest")
+        //         }
+        //         else{
+        //             console.log("d is greatest")
+        //         }
+        //     }
+        // }
+        // else if(b>c){
+        //     if(b>a){
+        //         if(b>d){
+        //             console.log("b is greatest")
+        //         }
+        //         else{
+        //             console.log("d is greatest")
+        //         }
+        //     }
+        // }
+        // else if(c>d){
+        //             console.log("c is greatest")
+
+
+        // }
+
+        // else{
+        //     console.log("d is greatest")
+        // }
+
+
+
+        let x = 0;
+        do {
+            console.log("Hello java script")
+            x++;
+        } while (x!=5);                   //x==5
+
+
+        let y = 0;
+        while (false){                              //y<5
+            console.log(y)
+            y++
+        }
+
+        for (let z = 0; z < 5; z++) {
+            console.log(z)
+        }
+
+        //FUNCTIONS
+
+        // function output(a,b){
+        //     console.log(a+b)
+        // }
+        // output(10,20)
+
+        function output(a, b) {
+            return a + b
+        }
+        // console.log(output(10,20))
+        let ans = output(10, 20);
+        console.log(ans)
+
+        function output(a, b = 100) {
+            return a + b
+        }
+        // console.log(output(10))
+
+        // let answer= output(10);
+        // console.log(answer)
+
+
+
+        // (function(a,b){
+        //     console.log("hello java script",a+b)
+        // })(10,20)
+
+        // (function(a,b){
+        //     console.log(`hello java script ${a+b}`)
+        // })(10,20)
+
+
+
+        let f1 = function (a, b) {       //Function expression
+            console.log(a + b);
+        };
+        let f2 = function (a, b) {           //Function expression
+            console.log(a - b);
+        };
+        f1(100, 200);             //function call
+        f2(200, 300);             //function call
+
+
+
+        //  (()=>{
+        //     console.log("hyyyyyy")
+        //  })()
+
+        let f3 = (a, b) => a + b    //{ return a+b}
+        //  let ans1 = f3(10,20)
+        //  console.log(ans1)
+
+        console.log(f3(4, 5))
+
+
+
+
+        //Closures
+
+        function outer() {
+            let a = 20;
+            let b = 30;
+            function inner() {
+                console.log(a + b)
+            }
+            return inner;
+        }
+        let answer1 = outer();
+        console.log(answer1)
+        answer1()                 //inner function called so come with lexical environment
+
+
+        // call back function
+
+        // function f5(a){
+        // console.log("hello i am f1 function")
+        // console.log(a)
+        //     a()
+        // }
+        // function f6(){
+        //     console.log("hello i am f2 function")
+        // }
+        // f5(f6)                                   //func 1 called with argument as func 2
+
+
+        function outputt(x, y, z) {
+            // console.log(z)
+            z(x, y)
+        }
+        function add(a, b) {
+            console.log(a + b)
+        }
+        outputt(10, 20, add)
+
+
+
+
+    </script>
+
+</body>
+
+</html>
